@@ -8,11 +8,18 @@
 
     <meta
         name="description"
-        content="Vara Prasad Jada — Independent Developer & Digital Creator working across software, technology, web projects, AI exploration, and digital publishing."
+        content="Vara Prasad Jada — Independent developer and digital creator working across software development, web applications, AI, mobile technology, and digital projects."
     >
 
     <meta name="author" content="Vara Prasad Jada">
 
+    <link
+        rel="canonical"
+        href="https://varaprasad-jada.github.io/"
+    >
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile">
     <meta property="og:title" content="Vara Prasad Jada">
     <meta
         property="og:description"
@@ -22,769 +29,238 @@
         property="og:url"
         content="https://varaprasad-jada.github.io/"
     >
-    <meta property="og:type" content="website">
+
+    <!-- Person structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://varaprasad-jada.github.io/#person",
+        "name": "Vara Prasad Jada",
+        "url": "https://varaprasad-jada.github.io/",
+        "sameAs": [
+            "https://github.com/Varaprasad-Jada",
+            "https://in.linkedin.com/in/vara-prasad-jada-046477163",
+            "https://www.blogger.com/profile/07775150140177064592",
+            "https://www.udemy.com/user/varaprasad-jada/",
+            "https://about.me/varaprasadjada",
+            "https://in.pinterest.com/varaprasadjada/"
+        ],
+        "jobTitle": "Independent Developer & Digital Creator"
+    }
+    </script>
 
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                Roboto,
-                Helvetica,
-                Arial,
-                sans-serif;
-
-            line-height: 1.6;
-            color: #171717;
-            background: #ffffff;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        .container {
-            width: min(1100px, 90%);
-            margin: 0 auto;
-        }
-
-        /* =========================
-           HEADER
-        ========================= */
-
-        header {
-            border-bottom: 1px solid #e5e5e5;
-            background: rgba(255, 255, 255, 0.96);
-        }
-
-        nav {
-            min-height: 72px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 30px;
-        }
-
-        .brand {
-            font-size: 20px;
-            font-weight: 700;
-            letter-spacing: -0.4px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 24px;
-            list-style: none;
-            font-size: 15px;
-        }
-
-        .nav-links a {
-            color: #555555;
-            transition: color 0.2s ease;
-        }
-
-        .nav-links a:hover {
-            color: #000000;
-        }
-
-        /* =========================
-           HERO
-        ========================= */
-
-        .hero {
-            padding: 125px 0 115px;
-        }
-
-        .eyebrow {
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 1.8px;
-            text-transform: uppercase;
-            color: #666666;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            max-width: 900px;
-            font-size: clamp(44px, 7vw, 78px);
-            line-height: 1.03;
-            letter-spacing: -4px;
-            margin-bottom: 30px;
-        }
-
-        .hero-description {
-            max-width: 700px;
-            font-size: 21px;
-            line-height: 1.7;
-            color: #555555;
-            margin-bottom: 36px;
-        }
-
-        .buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 12px 21px;
-            border: 1px solid #171717;
-            border-radius: 8px;
-            font-size: 15px;
-            font-weight: 600;
-            transition:
-                background 0.2s ease,
-                color 0.2s ease;
-        }
-
-        .button.primary {
-            background: #171717;
-            color: #ffffff;
-        }
-
-        .button.primary:hover {
-            background: #333333;
-        }
-
-        .button.secondary:hover {
-            background: #f5f5f5;
-        }
-
-        /* =========================
-           SECTIONS
-        ========================= */
-
-        section {
-            padding: 90px 0;
-            border-top: 1px solid #e5e5e5;
-        }
-
-        .section-title {
-            font-size: 36px;
-            line-height: 1.2;
-            letter-spacing: -1.2px;
-            margin-bottom: 18px;
-        }
-
-        .section-intro {
-            max-width: 720px;
-            color: #666666;
-            margin-bottom: 40px;
-            font-size: 17px;
-            line-height: 1.8;
-        }
-
-        /* =========================
-           ABOUT
-        ========================= */
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 60px;
-            align-items: start;
-        }
-
-        .about-text p {
-            color: #555555;
-            font-size: 17px;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-
-        .identity-card {
-            border: 1px solid #e5e5e5;
-            border-radius: 14px;
-            padding: 26px;
-        }
-
-        .identity-card h3 {
-            font-size: 18px;
-            margin-bottom: 16px;
-        }
-
-        .identity-card p {
-            color: #666666;
-            font-size: 15px;
-            line-height: 1.7;
-        }
-
-        /* =========================
-           PROJECTS
-        ========================= */
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .card {
-            border: 1px solid #e5e5e5;
-            border-radius: 14px;
-            padding: 28px;
-            transition:
-                transform 0.2s ease,
-                border-color 0.2s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-3px);
-            border-color: #cfcfcf;
-        }
-
-        .card h3 {
-            font-size: 19px;
-            margin-bottom: 12px;
-        }
-
-        .card p {
-            color: #666666;
-            font-size: 15px;
-            line-height: 1.7;
-        }
-
-        /* =========================
-           SOFTWARE LABS
-        ========================= */
-
-        .labs {
-            border: 1px solid #e5e5e5;
-            border-radius: 16px;
-            padding: 34px;
-        }
-
-        .labs h3 {
-            font-size: 24px;
-            margin-bottom: 12px;
-        }
-
-        .labs p {
-            max-width: 760px;
-            color: #666666;
-            font-size: 16px;
-            line-height: 1.8;
-            margin-bottom: 18px;
-        }
-
-        .labs-label {
-            font-size: 13px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
-            color: #777777;
-            margin-bottom: 8px;
-        }
-
-        /* =========================
-           WORK & PUBLICATIONS
-        ========================= */
-
-        .links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
-        }
-
-        .link-card {
-            border: 1px solid #e5e5e5;
-            border-radius: 10px;
-            padding: 13px 18px;
-            font-size: 15px;
-            font-weight: 600;
-            transition: background 0.2s ease;
-        }
-
-        .link-card:hover {
-            background: #f5f5f5;
-        }
-
-        /* =========================
-           CONTACT
-        ========================= */
-
-        .contact-box {
-            max-width: 750px;
-        }
-
-        .contact-box p {
-            color: #666666;
-            font-size: 17px;
-            line-height: 1.8;
-            margin-bottom: 28px;
-        }
-
-        /* =========================
-           FOOTER
-        ========================= */
-
-        footer {
-            padding: 40px 0;
-            border-top: 1px solid #e5e5e5;
-            color: #777777;
-            font-size: 14px;
-        }
-
-        .footer-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        /* =========================
-           MOBILE
-        ========================= */
-
-        @media (max-width: 800px) {
-
-            .nav-links {
-                display: none;
-            }
-
-            .hero {
-                padding: 85px 0 80px;
-            }
-
-            h1 {
-                font-size: clamp(42px, 12vw, 62px);
-                letter-spacing: -2.5px;
-            }
-
-            .hero-description {
-                font-size: 18px;
-            }
-
-            .about-grid {
-                grid-template-columns: 1fr;
-                gap: 35px;
-            }
-
-            .cards {
-                grid-template-columns: 1fr;
-            }
-
-            section {
-                padding: 65px 0;
-            }
-
-            .section-title {
-                font-size: 31px;
-            }
-
-            .footer-content {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-        }
-    </style>
-</head>
 
 <body>
 
-    <!-- =========================
-         HEADER
-    ========================== -->
+<header>
+    <div class="container">
+        <nav>
 
-    <header>
+            <a href="#" class="brand">
+                Vara Prasad Jada
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#labs">Software Labs</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero">
+
         <div class="container">
 
-            <nav>
+            <div class="eyebrow">
+                Independent Developer & Digital Creator
+            </div>
 
-                <a href="#" class="brand">
-                    Vara Prasad Jada
+            <h1>
+                Vara Prasad Jada
+            </h1>
+
+            <p class="hero-description">
+                I build software, web applications, and digital projects
+                across mobile technology, machine learning, web development,
+                and independent digital products.
+            </p>
+
+            <div class="buttons">
+
+                <a class="button primary" href="#projects">
+                    View my work
                 </a>
 
-                <ul class="nav-links">
+                <a
+                    class="button secondary"
+                    href="https://github.com/Varaprasad-Jada"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
 
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
+                <a
+                    class="button secondary"
+                    href="https://in.linkedin.com/in/vara-prasad-jada-046477163"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
 
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-
-                    <li>
-                        <a href="#labs">Software Labs</a>
-                    </li>
-
-                    <li>
-                        <a href="#work">Work</a>
-                    </li>
-
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-
-                </ul>
-
-            </nav>
+            </div>
 
         </div>
-    </header>
+
+    </section>
 
 
-    <main>
+    <section id="about">
 
-        <!-- =========================
-             HERO
-        ========================== -->
+        <div class="container">
 
-        <section class="hero">
+            <h2 class="section-title">
+                About
+            </h2>
 
-            <div class="container">
+            <div class="about-grid">
 
-                <div class="eyebrow">
-                    Independent Developer & Digital Creator
-                </div>
+                <div class="about-text">
 
-                <h1>
-                    Building software, exploring ideas, and creating digital work.
-                </h1>
+                    <p>
+                        I am Vara Prasad Jada, an independent developer
+                        and digital creator interested in software,
+                        technology, artificial intelligence, web development,
+                        and digital products.
+                    </p>
 
-                <p class="hero-description">
-                    I'm Vara Prasad Jada. I work across software development,
-                    technology, AI exploration, web projects, educational
-                    content, and independent digital projects.
-                </p>
+                    <p>
+                        My work includes Android applications, web
+                        applications, Python and machine-learning projects,
+                        digital publishing, and independent technology
+                        experiments.
+                    </p>
 
-                <div class="buttons">
-
-                    <a
-                        class="button primary"
-                        href="#projects"
-                    >
-                        View my work
-                    </a>
-
-                    <a
-                        class="button secondary"
-                        href="https://github.com/Varaprasad-Jada"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GitHub
-                    </a>
+                    <p>
+                        This website serves as a central place to document
+                        selected work and connect my public professional
+                        presence across the web.
+                    </p>
 
                 </div>
 
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             ABOUT
-        ========================== -->
-
-        <section id="about">
-
-            <div class="container">
-
-                <h2 class="section-title">
-                    About
-                </h2>
-
-                <div class="about-grid">
-
-                    <div class="about-text">
-
-                        <p>
-                            I am Vara Prasad Jada, an independent developer
-                            and digital creator interested in software,
-                            technology, AI, web development, and digital
-                            products.
-                        </p>
-
-                        <p>
-                            My work has included software experiments,
-                            web projects, educational publishing, digital
-                            content, and independent technology projects.
-                        </p>
-
-                        <p>
-                            I use this website as a central place to document
-                            my work and projects across the web.
-                        </p>
-
-                    </div>
-
-
-                    <div class="identity-card">
-
-                        <h3>
-                            Areas of interest
-                        </h3>
-
-                        <p>
-                            Software Development<br>
-                            Web Development<br>
-                            Artificial Intelligence<br>
-                            Android & Mobile Technology<br>
-                            Digital Products<br>
-                            Technical & Educational Content
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             PROJECTS
-        ========================== -->
-
-        <section id="projects">
-
-            <div class="container">
-
-                <h2 class="section-title">
-                    Projects
-                </h2>
-
-                <p class="section-intro">
-                    Selected software, web, and digital projects created
-                    and published by me.
-                </p>
-
-
-                <div class="cards">
-
-
-                    <article class="card">
-
-                        <h3>
-                            Web Development Projects
-                        </h3>
-
-                        <p>
-                            Websites and web applications created while
-                            exploring frontend development, JavaScript,
-                            and digital experiences.
-                        </p>
-
-                    </article>
-
-
-                    <article class="card">
-
-                        <h3>
-                            Software Experiments
-                        </h3>
-
-                        <p>
-                            Practical applications and programming
-                            experiments covering different areas of
-                            software development and technology.
-                        </p>
-
-                    </article>
-
-
-                    <article class="card">
-
-                        <h3>
-                            Digital Projects
-                        </h3>
-
-                        <p>
-                            Independent projects involving publishing,
-                            educational content, digital products,
-                            and online platforms.
-                        </p>
-
-                    </article>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             SOFTWARE LABS
-        ========================== -->
-
-        <section id="labs">
-
-            <div class="container">
-
-                <div class="labs">
-
-                    <div class="labs-label">
-                        Independent venture
-                    </div>
+                <div class="identity-card">
 
                     <h3>
-                        Vara Prasad Jada Software Labs
+                        Areas of work
                     </h3>
 
                     <p>
-                        An independent software and digital-product
-                        venture associated with my development and
-                        technology work.
-                    </p>
-
-                    <p>
-                        The Software Labs identity is separate from
-                        individual projects and provides a home for
-                        future software, experiments, and digital products.
+                        Software Development<br>
+                        Android & Mobile Applications<br>
+                        Web Development<br>
+                        Python & Machine Learning<br>
+                        Digital Products<br>
+                        Technical & Educational Projects
                     </p>
 
                 </div>
 
             </div>
 
-        </section>
+        </div>
+
+    </section>
 
 
-        <!-- =========================
-             WORK & PUBLICATIONS
-        ========================== -->
+    <section id="projects">
 
-        <section id="work">
+        <div class="container">
 
-            <div class="container">
+            <h2 class="section-title">
+                Selected Projects
+            </h2>
 
-                <h2 class="section-title">
-                    Work & Publications
-                </h2>
+            <p class="section-intro">
+                A selection of completed software projects and current
+                development work.
+            </p>
 
-                <p class="section-intro">
-                    My work and published activities can also be found
-                    across several established platforms.
-                </p>
+            <div class="cards">
 
+                <article class="card">
 
-                <div class="links">
+                    <div class="card-label">
+                        Published Android Application
+                    </div>
 
-                    <a
-                        class="link-card"
-                        href="https://github.com/Varaprasad-Jada"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GitHub
-                    </a>
-
-
-                    <a
-                        class="link-card"
-                        href="https://in.linkedin.com/in/vara-prasad-jada-046477163"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        LinkedIn
-                    </a>
-
-
-                    <a
-                        class="link-card"
-                        href="https://www.udemy.com/user/varaprasad-jada/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Udemy
-                    </a>
-
-
-                    <a
-                        class="link-card"
-                        href="https://www.blogger.com/profile/07775150140177064592"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Blogger
-                    </a>
-
-
-                    <a
-                        class="link-card"
-                        href="https://about.me/varaprasadjada"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        About.me
-                    </a>
-
-
-                    <a
-                        class="link-card"
-                         href="https://in.pinterest.com/biggbossteluguinsider/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                            Bigg Boss Telugu Insider — Pinterest
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             CONTACT
-        ========================== -->
-
-        <section id="contact">
-
-            <div class="container">
-
-                <div class="contact-box">
-
-                    <h2 class="section-title">
-                        Contact
-                    </h2>
+                    <h3>
+                        3D Video Player
+                    </h3>
 
                     <p>
-                        For professional, collaboration, or project-related
-                        enquiries, you can connect with me through my
-                        professional profiles.
+                        An Android multimedia application developed for
+                        immersive 3D, 360°, VR, and video playback.
+                        The application was published through Mi App Mall /
+                        GetApps under Vara Prasad Jada Software Labs.
                     </p>
 
-
-                    <div class="buttons">
+                    <div class="card-links">
 
                         <a
-                            class="button primary"
-                            href="https://in.linkedin.com/in/vara-prasad-jada-046477163"
+                            class="small-link"
+                            href="https://github.com/Varaprasad-Jada/3d-player"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            LinkedIn
+                            Project
                         </a>
 
+                        <a
+                            class="small-link"
+                            href="https://global.app.mi.com/details?lo=IN&la=en_US&id=com.varaprasadjada.videoplayer3d"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            App Listing
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="card-label">
+                        Python / Machine Learning
+                    </div>
+
+                    <h3>
+                        AI-Driven Backtester
+                    </h3>
+
+                    <p>
+                        A Python project combining historical market data,
+                        technical indicators, machine learning, strategy
+                        simulation, and quantitative performance analysis.
+                    </p>
+
+                    <div class="card-links">
 
                         <a
-                            class="button"
-                            href="https://github.com/Varaprasad-Jada"
+                            class="small-link"
+                            href="https://github.com/Varaprasad-Jada/ai_backtekster_project"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -793,38 +269,260 @@
 
                     </div>
 
-                </div>
+                </article>
+
+
+                <article class="card">
+
+                    <div class="card-label">
+                        Completed Web Application
+                    </div>
+
+                    <h3>
+                        Recipe Finder
+                    </h3>
+
+                    <p>
+                        A responsive recipe discovery web application
+                        allowing users to find recipes by name, ingredient,
+                        and category using TheMealDB API.
+                    </p>
+
+                    <div class="card-links">
+
+                        <a
+                            class="small-link"
+                            href="https://github.com/Varaprasad-Jada/recipe-finder-app"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="card-label">
+                        In Development
+                    </div>
+
+                    <h3>
+                        VibeLink
+                    </h3>
+
+                    <p>
+                        An active web development project currently under
+                        development.
+                    </p>
+
+                    <div class="card-links">
+
+                        <a
+                            class="small-link"
+                            href="https://github.com/Varaprasad-Jada/vibelink-web"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </article>
 
             </div>
 
-        </section>
+        </div>
 
-    </main>
+    </section>
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer>
+    <section id="labs">
 
         <div class="container">
 
-            <div class="footer-content">
+            <div class="labs">
 
-                <div>
-                    © 2026 Vara Prasad Jada
+                <div class="labs-label">
+                    Independent venture
                 </div>
 
-                <div>
-                    Independent Developer & Digital Creator
+                <h3>
+                    Vara Prasad Jada Software Labs
+                </h3>
+
+                <p>
+                    An independent software and digital-product venture
+                    associated with my technology and development work.
+                </p>
+
+                <p>
+                    The Software Labs identity provides a home for software,
+                    applications, experiments, and future digital products.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="work">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Work & Publications
+            </h2>
+
+            <p class="section-intro">
+                My work and public profiles can also be found across
+                several established platforms.
+            </p>
+
+            <div class="links">
+
+                <a
+                    class="link-card"
+                    href="https://github.com/Varaprasad-Jada"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <a
+                    class="link-card"
+                    href="https://in.linkedin.com/in/vara-prasad-jada-046477163"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+
+                <a
+                    class="link-card"
+                    href="https://www.amazon.in/stores/Varaprasad-Jada/author/B0FSLM9ZTC"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Amazon / Kindle
+                </a>
+
+                <a
+                    class="link-card"
+                    href="https://www.udemy.com/user/varaprasad-jada/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Udemy
+                </a>
+
+                <a
+                    class="link-card"
+                    href="https://www.blogger.com/profile/07775150140177064592"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Blogger
+                </a>
+
+                <a
+                    class="link-card"
+                    href="https://about.me/varaprasadjada"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    About.me
+                </a>
+
+                <a
+                    class="link-card"
+                    href="https://in.pinterest.com/varaprasadjada/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Pinterest
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="contact-box">
+
+                <h2 class="section-title">
+                    Contact
+                </h2>
+
+                <p>
+                    For professional, collaboration, or project-related
+                    enquiries, you can connect with me through LinkedIn
+                    or GitHub.
+                </p>
+
+                <div class="buttons">
+
+                    <a
+                        class="button primary"
+                        href="https://in.linkedin.com/in/vara-prasad-jada-046477163"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
+
+                    <a
+                        class="button"
+                        href="https://github.com/Varaprasad-Jada"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+
                 </div>
 
             </div>
 
         </div>
 
-    </footer>
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div>
+                © 2026 Vara Prasad Jada
+            </div>
+
+            <div>
+                Independent Developer & Digital Creator
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
 
 </body>
 </html>
