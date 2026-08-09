@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://varaprasad-jada.github.io/sitemap.xml
