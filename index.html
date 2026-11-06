@@ -1,1071 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="f3wlayOTjfbpAppsu0g1WC0uhUrI2mgkYcZBzXWg7vs" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Vara Prasad Jada | Independent Developer & Digital Creator</title>
-
-    <meta
-        name="description"
-        content="Vara Prasad Jada — Independent developer and digital creator working across software development, web applications, AI, mobile technology, and digital projects."
-    >
-
-    <meta name="author" content="Vara Prasad Jada">
-
-    <link
-        rel="canonical"
-        href="https://varaprasad-jada.github.io/"
-    >
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="profile">
-    <meta property="og:title" content="Vara Prasad Jada">
-    <meta
-        property="og:description"
-        content="Independent Developer & Digital Creator."
-    >
-    <meta
-        property="og:url"
-        content="https://varaprasad-jada.github.io/"
-    >
-
-    <!-- Person structured data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": "https://varaprasad-jada.github.io/#person",
-        "name": "Vara Prasad Jada",
-        "url": "https://varaprasad-jada.github.io/",
-        "sameAs": [
-            "https://github.com/Varaprasad-Jada",
-            "https://in.linkedin.com/in/vara-prasad-jada-046477163",
-            "https://www.blogger.com/profile/07775150140177064592",
-            "https://www.udemy.com/user/varaprasad-jada/",
-            "https://about.me/varaprasadjada",
-            "https://in.pinterest.com/varaprasadjada/"
-        ],
-        "jobTitle": "Independent Developer & Digital Creator"
-    }
-    </script>
-
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                Roboto,
-                Helvetica,
-                Arial,
-                sans-serif;
-            line-height: 1.6;
-            color: #171717;
-            background: #ffffff;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        .container {
-            width: min(1100px, 90%);
-            margin: 0 auto;
-        }
-
-        /* =========================
-           HEADER
-        ========================= */
-
-        header {
-            border-bottom: 1px solid #e5e5e5;
-            background: rgba(255, 255, 255, 0.96);
-        }
-
-        nav {
-            min-height: 72px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 30px;
-        }
-
-        .brand {
-            font-size: 20px;
-            font-weight: 700;
-            letter-spacing: -0.4px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 24px;
-            list-style: none;
-            font-size: 15px;
-        }
-
-        .nav-links a {
-            color: #555555;
-            transition: color 0.2s ease;
-        }
-
-        .nav-links a:hover {
-            color: #000000;
-        }
-
-        /* =========================
-           HERO
-        ========================= */
-
-        .hero {
-            padding: 125px 0 115px;
-        }
-
-        .eyebrow {
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 1.8px;
-            text-transform: uppercase;
-            color: #666666;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            max-width: 900px;
-            font-size: clamp(44px, 7vw, 78px);
-            line-height: 1.03;
-            letter-spacing: -4px;
-            margin-bottom: 30px;
-        }
-
-        .hero-description {
-            max-width: 700px;
-            font-size: 21px;
-            line-height: 1.7;
-            color: #555555;
-            margin-bottom: 36px;
-        }
-
-        .buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 12px 21px;
-            border: 1px solid #171717;
-            border-radius: 8px;
-            font-size: 15px;
-            font-weight: 600;
-            transition:
-                background 0.2s ease,
-                color 0.2s ease;
-        }
-
-        .button.primary {
-            background: #171717;
-            color: #ffffff;
-        }
-
-        .button.primary:hover {
-            background: #333333;
-        }
-
-        .button.secondary:hover {
-            background: #f5f5f5;
-        }
-
-        /* =========================
-           SECTIONS
-        ========================= */
-
-        section {
-            padding: 90px 0;
-            border-top: 1px solid #e5e5e5;
-        }
-
-        .section-title {
-            font-size: 36px;
-            line-height: 1.2;
-            letter-spacing: -1.2px;
-            margin-bottom: 18px;
-        }
-
-        .section-intro {
-            max-width: 720px;
-            color: #666666;
-            margin-bottom: 40px;
-            font-size: 17px;
-            line-height: 1.8;
-        }
-
-        /* =========================
-           ABOUT
-        ========================= */
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 60px;
-            align-items: start;
-        }
-
-        .about-text p {
-            color: #555555;
-            font-size: 17px;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-
-        .identity-card {
-            border: 1px solid #e5e5e5;
-            border-radius: 14px;
-            padding: 26px;
-        }
-
-        .identity-card h3 {
-            font-size: 18px;
-            margin-bottom: 16px;
-        }
-
-        .identity-card p {
-            color: #666666;
-            font-size: 15px;
-            line-height: 1.7;
-        }
-
-        /* =========================
-           PROJECTS
-        ========================= */
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .card {
-            border: 1px solid #e5e5e5;
-            border-radius: 14px;
-            padding: 28px;
-            transition:
-                transform 0.2s ease,
-                border-color 0.2s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-3px);
-            border-color: #cfcfcf;
-        }
-
-        .card-label {
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: #777777;
-            margin-bottom: 10px;
-        }
-
-        .card h3 {
-            font-size: 19px;
-            margin-bottom: 12px;
-        }
-
-        .card p {
-            color: #666666;
-            font-size: 15px;
-            line-height: 1.7;
-        }
-
-        .card-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .small-link {
-            font-size: 14px;
-            font-weight: 700;
-            text-decoration: underline;
-        }
-
-        /* =========================
-           SOFTWARE LABS
-        ========================= */
-
-        .labs {
-            border: 1px solid #e5e5e5;
-            border-radius: 16px;
-            padding: 34px;
-        }
-
-        .labs h3 {
-            font-size: 24px;
-            margin-bottom: 12px;
-        }
-
-        .labs p {
-            max-width: 760px;
-            color: #666666;
-            font-size: 16px;
-            line-height: 1.8;
-            margin-bottom: 18px;
-        }
-
-        .labs-label {
-            font-size: 13px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
-            color: #777777;
-            margin-bottom: 8px;
-        }
-
-        /* =========================
-           WORK & PUBLICATIONS
-        ========================= */
-
-        .links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
-        }
-
-        .link-card {
-            border: 1px solid #e5e5e5;
-            border-radius: 10px;
-            padding: 13px 18px;
-            font-size: 15px;
-            font-weight: 600;
-            transition: background 0.2s ease;
-        }
-
-        .link-card:hover {
-            background: #f5f5f5;
-        }
-
-        /* =========================
-           CONTACT
-        ========================= */
-
-        .contact-box {
-            max-width: 750px;
-        }
-
-        .contact-box p {
-            color: #666666;
-            font-size: 17px;
-            line-height: 1.8;
-            margin-bottom: 28px;
-        }
-
-        /* =========================
-           FOOTER
-        ========================= */
-
-        footer {
-            padding: 40px 0;
-            border-top: 1px solid #e5e5e5;
-            color: #777777;
-            font-size: 14px;
-        }
-
-        .footer-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        /* =========================
-           MOBILE
-        ========================= */
-
-        @media (max-width: 800px) {
-
-            .nav-links {
-                display: none;
-            }
-
-            .hero {
-                padding: 85px 0 80px;
-            }
-
-            h1 {
-                font-size: clamp(42px, 12vw, 62px);
-                letter-spacing: -2.5px;
-            }
-
-            .hero-description {
-                font-size: 18px;
-            }
-
-            .about-grid {
-                grid-template-columns: 1fr;
-                gap: 35px;
-            }
-
-            .cards {
-                grid-template-columns: 1fr;
-            }
-
-            section {
-                padding: 65px 0;
-            }
-
-            .section-title {
-                font-size: 31px;
-            }
-
-            .footer-content {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-        }
-.tech-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-    margin: 18px 0 20px;
+<meta charset="utf-8">
+<meta name="google-site-verification" content="f3wlayOTjfbpAppsu0g1WC0uhUrI2mgkYcZBzXWg7vs" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vara Prasad Jada | WordPress and Android developer</title>
+<meta name="description" content="Vara Prasad Jada builds WordPress themes and plugins and Android apps. Author of a plugin listed on the WordPress.org Plugin Directory.">
+<meta name="author" content="Vara Prasad Jada">
+<link rel="canonical" href="https://varaprasad-jada.github.io/">
+<meta property="og:title" content="Vara Prasad Jada">
+<meta property="og:description" content="WordPress themes and plugins, and Android apps.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://varaprasad-jada.github.io/">
+<meta property="og:image" content="https://ps.w.org/varastudy-vault-access-control/assets/banner-1544x500.png?rev=3774765">
+<meta name="theme-color" content="#080c09">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#080c09; --panel:#101811; --line:#223626; --text:#e9f3ea; --muted:#a6b9aa;
+  --omni:#6dff3f; --omni-deep:#2fb81a; --white:#ffffff;
+  --display:"Chakra Petch","Trebuchet MS",system-ui,sans-serif;
+  --body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
 }
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--ink);color:var(--text);font:18px/1.6 var(--body)}
+a{color:inherit}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--omni);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
 
-.tech-tags span {
-    padding: 5px 9px;
-    border: 1px solid #e5e5e5;
-    border-radius: 6px;
-    font-size: 12px;
-    color: #666666;
-    background: #fafafa;
+/* header */
+header{position:sticky;top:0;z-index:5;background:rgba(8,12,9,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font:600 18px var(--display);text-decoration:none;color:var(--white)}
+nav{display:flex;gap:22px}
+nav a{color:var(--muted);text-decoration:none;font-size:16px}
+nav a:hover{color:var(--omni)}
+
+/* hero: the one bold element */
+.hero{position:relative;overflow:hidden;padding:84px 0 96px;background:radial-gradient(ellipse 60% 70% at 85% 40%,rgba(109,255,63,.16),transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:32px;align-items:center}
+h1{font:700 clamp(44px,8vw,84px)/1 var(--display);margin:0 0 20px;letter-spacing:-.02em;color:var(--white)}
+.hero p{max-width:34ch;font-size:22px;color:var(--muted);margin:0 0 32px}
+.hero p b{color:var(--text);font-weight:600}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 22px;border:2px solid var(--omni);border-radius:4px;font:600 16px var(--display);text-decoration:none;color:var(--omni)}
+.btn.fill{background:var(--omni);color:#04110a}
+.btn:hover{background:var(--omni-deep);border-color:var(--omni-deep);color:#04110a}
+.dial{justify-self:center;width:min(300px,70vw);aspect-ratio:1;border-radius:50%;
+  background:conic-gradient(from 0deg,var(--omni) 0 22%,transparent 22% 25%,var(--omni) 25% 47%,transparent 47% 50%,var(--omni) 50% 72%,transparent 72% 75%,var(--omni) 75% 97%,transparent 97% 100%);
+  -webkit-mask:radial-gradient(circle,transparent 61%,#000 62% 80%,transparent 81%);mask:radial-gradient(circle,transparent 61%,#000 62% 80%,transparent 81%);
+  filter:drop-shadow(0 0 18px rgba(109,255,63,.55));animation:spin 28s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font:600 clamp(28px,4vw,38px)/1.15 var(--display);margin:0 0 12px;color:var(--white)}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 36px}
+
+/* projects */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--omni);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.card.wide{grid-column:1 / -1;flex-direction:row}
+.shot{background:#0b130c;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:15px;text-align:center;padding:16px}
+.shot img{width:100%;height:100%;object-fit:cover;display:block}
+.card.wide .shot{flex:1 1 46%;aspect-ratio:auto;min-height:240px}
+.body{padding:24px;flex:1 1 54%}
+.kind{color:var(--omni);font-size:15px;font-weight:600;margin:0 0 4px}
+h3{font:600 24px/1.2 var(--display);margin:0 0 10px;color:var(--white)}
+.body p{margin:0 0 16px;color:var(--muted);font-size:17px}
+.links{display:flex;gap:18px;flex-wrap:wrap;font-weight:600}
+.links a{color:var(--omni);text-underline-offset:4px}
+.links a:hover{color:var(--white)}
+
+/* writing */
+.posts{list-style:none;margin:0;padding:0;display:grid;gap:22px;max-width:70ch}
+.posts a{font:600 20px/1.35 var(--display);color:var(--white);text-decoration-color:var(--omni);text-underline-offset:5px}
+.posts a:hover{color:var(--omni)}
+.posts p{margin:6px 0 0;color:var(--muted);font-size:17px}
+
+/* tools */
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.chips li{border:1px solid var(--line);background:var(--panel);padding:8px 16px;border-radius:999px;font-size:16px}
+
+.plain{display:flex;flex-wrap:wrap;gap:12px}
+.plain a{border:1px solid var(--line);padding:10px 18px;border-radius:4px;text-decoration:none;color:var(--text)}
+.plain a:hover{border-color:var(--omni);color:var(--omni)}
+
+footer{padding:32px 0;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+
+@media (max-width:760px){
+  nav{gap:14px}
+  nav a{font-size:15px}
+  .hero{padding:56px 0 64px}
+  .hero .wrap{grid-template-columns:1fr}
+  .dial{order:-1;width:140px;justify-self:start}
+  .grid{grid-template-columns:1fr}
+  .card.wide{flex-direction:column}
+  .card.wide .shot{min-height:0;aspect-ratio:16/9}
 }
-        
-    </style>
+@media (prefers-reduced-motion:reduce){
+  .dial{animation:none}
+  html{scroll-behavior:auto}
+}
+</style>
 </head>
-
 <body>
 
-    <!-- =========================
-         HEADER
-    ========================== -->
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Vara Prasad Jada</a>
+    <nav aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#writing">Writing</a>
+      <a href="#tools">Tools</a>
+      <a href="#elsewhere">Elsewhere</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-    <header>
-        <div class="container">
-
-            <nav>
-
-                <a href="#" class="brand">
-                    Vara Prasad Jada
-                </a>
-
-               <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#contact">Contact</a></li>
-</ul>
-
-            </nav>
-
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Vara Prasad Jada</h1>
+        <p>I build <b>WordPress themes and plugins</b> and <b>Android apps</b>. My plugin is listed on the WordPress.org Plugin Directory.</p>
+        <div class="btns">
+          <a class="btn fill" href="#projects">See my projects</a>
+          <a class="btn" href="https://github.com/Varaprasad-Jada">GitHub</a>
+          <a class="btn" href="https://in.linkedin.com/in/vara-prasad-jada-046477163">LinkedIn</a>
         </div>
-    </header>
-
-
-    <main>
-
-        <!-- =========================
-             HERO
-        ========================== -->
-
-        <section class="hero">
-
-            <div class="container">
-
-                <div class="eyebrow">
-                    Independent Developer & Digital Creator
-                </div>
-
-                <h1>
-                    Vara Prasad Jada
-                </h1>
-
-                <p class="hero-description">
-                    I build software, web applications, and digital projects
-                    across mobile technology, machine learning, web development,
-                    and independent digital products.
-                </p>
-
-                <div class="buttons">
-
-                    <a
-                        class="button primary"
-                        href="#projects"
-                    >
-                        View my work
-                    </a>
-
-                    <a
-                        class="button secondary"
-                        href="https://github.com/Varaprasad-Jada"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GitHub
-                    </a>
-
-                    <a
-                        class="button secondary"
-                        href="https://in.linkedin.com/in/vara-prasad-jada-046477163"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        LinkedIn
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             ABOUT
-        ========================== -->
-
-        <section id="about">
-
-            <div class="container">
-
-                <h2 class="section-title">
-                    About
-                </h2>
-
-                <div class="about-grid">
-
-                    <div class="about-text">
-
-                        <p>
-                            I am Vara Prasad Jada, an independent developer
-                            and digital creator interested in software,
-                            technology, artificial intelligence, web development,
-                            and digital products.
-                        </p>
-
-                        <p>
-                            My work includes Android applications, web
-                            applications, Python and machine-learning projects,
-                            digital publishing, and independent technology
-                            experiments.
-                        </p>
-
-                        <p>
-                            This website serves as a central place to document
-                            selected work and connect my public professional
-                            presence across the web.
-                        </p>
-
-                    </div>
-
-                    <div class="identity-card">
-
-                        <h3>
-                            Areas of work
-                        </h3>
-
-                        <p>
-                            Software Development<br>
-                            Android & Mobile Applications<br>
-                            Web Development<br>
-                            Python & Machine Learning<br>
-                            Digital Products<br>
-                            Technical & Educational Projects
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- =========================
-             skills
-        ========================== -->
-        
-<section id="skills">
-
-    <div class="container">
-
-        <h2 class="section-title">
-            Technologies & Areas
-        </h2>
-
-        <p class="section-intro">
-            Technologies and areas I have explored through independent
-            software development and digital projects.
-        </p>
-
-        <div class="links">
-
-            <div class="link-card">
-                Android Development
-            </div>
-
-            <div class="link-card">
-                Kotlin
-            </div>
-
-            <div class="link-card">
-                Python
-            </div>
-
-            <div class="link-card">
-                Machine Learning
-            </div>
-
-            <div class="link-card">
-                Web Development
-            </div>
-
-            <div class="link-card">
-                JavaScript
-            </div>
-
-            <div class="link-card">
-                REST APIs
-            </div>
-
-            <div class="link-card">
-                Git & GitHub
-            </div>
-
-        </div>
-
+      </div>
+      <div class="dial" role="img" aria-label="Decorative green dial"></div>
     </div>
+  </div>
 
-</section>
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <p class="lead">A few things I have finished and shipped.</p>
+      <div class="grid">
 
-        <!-- =========================
-             PROJECTS
-        ========================== -->
-
-        <section id="projects">
-
-            <div class="container">
-
-                <h2 class="section-title">
-                    Selected Projects
-                </h2>
-
-                <p class="section-intro">
-                    A selection of completed software projects and current
-                    development work.
-                </p>
-
-                <div class="cards">
-
-                    <!-- 3D PLAYER -->
-
-                   <article class="card">
-
-    <div class="card-label">
-        Published Android Application
-    </div>
-
-    <h3>
-        3D Video Player
-    </h3>
-
-    <p>
-        An Android multimedia application developed for immersive
-        3D, 360°, VR, and video playback. The application was
-        published through a third-party app marketplace.
-    </p>
-
-    <div class="tech-tags">
-        <span>Android</span>
-        <span>Kotlin</span>
-        <span>3D / VR</span>
-        <span>Media Playback</span>
-    </div>
-
-    <div class="card-links">
-
-        <a
-            class="small-link"
-            href="https://github.com/Varaprasad-Jada/3d-player"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            GitHub
-        </a>
-
-        <a
-            class="small-link"
-            href="https://global.app.mi.com/details?lo=IN&la=en_US&id=com.varaprasadjada.videoplayer3d"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            App Listing
-        </a>
-
-    </div>
-
-</article>
-
-
-                    <!-- AI BACKTESTER -->
-
-                    <article class="card">
-
-    <div class="card-label">
-        Python / Machine Learning
-    </div>
-
-    <h3>
-        AI-Driven Backtester
-    </h3>
-
-    <p>
-        A Python project combining historical market data, technical
-        indicators, machine learning, strategy simulation, and
-        quantitative performance analysis.
-    </p>
-
-    <div class="tech-tags">
-        <span>Python</span>
-        <span>Machine Learning</span>
-        <span>scikit-learn</span>
-        <span>yfinance</span>
-        <span>Data Analysis</span>
-    </div>
-
-    <div class="card-links">
-
-        <a
-            class="small-link"
-            href="https://github.com/Varaprasad-Jada/ai_backtekster_project"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            GitHub
-        </a>
-
-    </div>
-
-</article>
-
-
-                    <!-- RECIPE FINDER -->
-
-                    <article class="card">
-
-    <div class="card-label">
-        Completed Web Application
-    </div>
-
-    <h3>
-        Recipe Finder
-    </h3>
-
-    <p>
-        A responsive recipe discovery web application allowing users
-        to find recipes by name, ingredient, and category using
-        TheMealDB API.
-    </p>
-
-    <div class="tech-tags">
-        <span>Web Development</span>
-        <span>JavaScript</span>
-        <span>API Integration</span>
-        <span>Responsive UI</span>
-        <span>TheMealDB</span>
-    </div>
-
-    <div class="card-links">
-
-        <a
-            class="small-link"
-            href="https://github.com/Varaprasad-Jada/recipe-finder-app"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            GitHub
-        </a>
-
-    </div>
-
-</article>
-
-
-                    <!-- VIBELINK -->
-
-                    <article class="card">
-
-    <div class="card-label">
-        In Development
-    </div>
-
-    <h3>
-        VibeLink
-    </h3>
-
-    <p>
-        An active web development project currently under development,
-        representing ongoing experimentation and product development.
-    </p>
-
-    <div class="tech-tags">
-        <span>Web Development</span>
-        <span>JavaScript</span>
-        <span>Frontend</span>
-        <span>Active Development</span>
-    </div>
-
-    <div class="card-links">
-
-        <a
-            class="small-link"
-            href="https://github.com/Varaprasad-Jada/vibelink-web"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            GitHub
-        </a>
-
-    </div>
-
-</article>
-
-                </div>
-
+        <article class="card wide">
+          <div class="shot"><img src="https://ps.w.org/varastudy-vault-access-control/assets/screenshot-2.png?rev=3774765" alt="Contributor access scope showing assigned course groups and semesters" loading="lazy"></div>
+          <div class="body">
+            <p class="kind">WordPress plugin, listed on WordPress.org</p>
+            <h3>VaraStudy Vault Access Control</h3>
+            <p>Lets admins give each contributor access to specific course groups and semesters. Submissions go to Pending Review, and only administrators can publish.</p>
+            <div class="links">
+              <a href="https://wordpress.org/plugins/varastudy-vault-access-control/">WordPress.org page</a>
+              <a href="https://github.com/Varaprasad-Jada/varastudy-vault-access-control">GitHub</a>
             </div>
+          </div>
+        </article>
 
-        </section>
+        <article class="card">
+          <div class="shot"><img src="https://github.com/Varaprasad-Jada/varastudy-vault/raw/main/screenshots/homepage.jpeg" alt="VaraStudy Vault theme homepage" loading="lazy"></div>
+          <div class="body">
+            <p class="kind">WordPress theme, open source</p>
+            <h3>VaraStudy Vault</h3>
+            <p>Organizes college subjects, study materials and question papers by course and semester.</p>
+            <div class="links"><a href="https://github.com/Varaprasad-Jada/varastudy-vault">GitHub</a></div>
+          </div>
+        </article>
 
-
-        <!-- =========================
-             SOFTWARE LABS
-        ========================== -->
-
-        <section id="development">
-
-    <div class="container">
-
-        <div class="labs">
-
-            <div class="labs-label">
-                Development
+        <article class="card">
+          <div class="shot">Add a screenshot of the app here</div>
+          <div class="body">
+            <p class="kind">Android app, published on an app store</p>
+            <h3>3D Video Player</h3>
+            <p>An Android video player for 3D and VR video.</p>
+            <div class="links">
+              <a href="https://global.app.mi.com/details?lo=IN&amp;la=en_US&amp;id=com.varaprasadjada.videoplayer3d">App listing</a>
+              <a href="https://github.com/Varaprasad-Jada/3d-player">GitHub</a>
             </div>
+          </div>
+        </article>
 
-            <h3>
-                Independent Software Development
-            </h3>
+        <article class="card">
+          <div class="shot">Add a screenshot of a result here</div>
+          <div class="body">
+            <p class="kind">Python, machine learning</p>
+            <h3>AI-Driven Backtester</h3>
+            <p>Tests trading strategies on historical market data using technical indicators and machine learning. For learning only, not financial advice.</p>
+            <div class="links"><a href="https://github.com/Varaprasad-Jada/ai_backtester_project">GitHub</a></div>
+          </div>
+        </article>
 
-            <p>
-                I develop independent software applications, web projects,
-                technical experiments, and digital products across different
-                areas of technology.
-            </p>
-
-            <p>
-                My projects range from Android applications and web
-                applications to Python, machine learning, and other
-                technology experiments.
-            </p>
-
-        </div>
-
+      </div>
     </div>
+  </section>
 
-</section>
+  <section id="writing">
+    <div class="wrap">
+      <h2>Writing</h2>
+      <p class="lead">Articles I have published on Waycode about how I built VaraStudy Vault.</p>
+      <ul class="posts">
+        <li>
+          <a href="https://www.waycode.in/varaprasadjada/publication/building-varastudy-vault-designing-a-structured-wordpress-theme-for-academic-resources-c4d902c1c2ea">Building VaraStudy Vault: Designing a Structured WordPress Theme for Academic Resources</a>
+          <p>How the theme’s templates, content model and Advanced Custom Fields fit together, plus its limits.</p>
+        </li>
+        <li>
+          <a href="https://www.waycode.in/varaprasadjada/publication/evolving-varastudy-vault-improving-semester-navigation-and-publishing-v110-0c099367ed89">Evolving VaraStudy Vault: Improving Semester Navigation and Publishing v1.1.0</a>
+          <p>What changed in version 1.1.0, including a dedicated semester page template, and how I released it.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
 
+  <section id="tools">
+    <div class="wrap">
+      <h2>Tools I have worked with</h2>
+      <ul class="chips">
+        <li>WordPress</li><li>PHP</li><li>Advanced Custom Fields</li><li>Android</li><li>Kotlin</li><li>Python</li><li>JavaScript</li><li>Git and GitHub</li>
+      </ul>
+    </div>
+  </section>
 
-        <!-- =========================
-             WORK & PUBLICATIONS
-        ========================== -->
+  <section id="elsewhere">
+    <div class="wrap">
+      <h2>Elsewhere</h2>
+      <div class="plain">
+        <a href="https://profiles.wordpress.org/varaprasadjada/">WordPress.org profile</a>
+        <a href="https://www.waycode.in/varaprasadjada">Waycode profile</a>
+        <a href="https://www.amazon.in/stores/Varaprasad-Jada/author/B0FSLM9ZTC">Amazon author page</a>
+        <a href="https://www.udemy.com/user/varaprasad-jada/">Udemy</a>
+      </div>
+    </div>
+  </section>
 
-        <section id="work">
+  <section id="contact">
+    <div class="wrap">
+      <h2>Get in touch</h2>
+      <p class="lead">For project work or collaboration, message me on LinkedIn or open an issue on GitHub.</p>
+      <div class="btns">
+        <a class="btn fill" href="https://in.linkedin.com/in/vara-prasad-jada-046477163">LinkedIn</a>
+        <a class="btn" href="https://github.com/Varaprasad-Jada">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
 
-            <div class="container">
-
-                <h2 class="section-title">
-                    Work & Publications
-                </h2>
-
-                <p class="section-intro">
-                    My work and public profiles can also be found across
-                    several established platforms.
-                </p>
-
-                <div class="links">
-
-                    <a
-                        class="link-card"
-                        href="https://github.com/Varaprasad-Jada"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GitHub
-                    </a>
-
-                    <a
-                        class="link-card"
-                        href="https://in.linkedin.com/in/vara-prasad-jada-046477163"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        LinkedIn
-                    </a>
-
-                    <a
-                        class="link-card"
-                        href="https://www.amazon.in/stores/Varaprasad-Jada/author/B0FSLM9ZTC"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Amazon / Kindle
-                    </a>
-
-                    <a
-                        class="link-card"
-                        href="https://www.udemy.com/user/varaprasad-jada/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Udemy
-                    </a>
-
-                    <a
-                        class="link-card"
-                        href="https://www.blogger.com/profile/07775150140177064592"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Blogger
-                    </a>
-
-                    <a
-                        class="link-card"
-                        href="https://about.me/varaprasadjada"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        About.me
-                    </a>
-
-                    <a
-                        class="link-card"
-                        href="https://in.pinterest.com/varaprasadjada/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Pinterest
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             CONTACT
-        ========================== -->
-
-        <section id="contact">
-
-            <div class="container">
-
-                <div class="contact-box">
-
-                    <h2 class="section-title">
-                        Contact
-                    </h2>
-
-                    <p>
-                        For professional, collaboration, or project-related
-                        enquiries, you can connect with me through LinkedIn
-                        or GitHub.
-                    </p>
-
-                    <div class="buttons">
-
-                        <a
-                            class="button primary"
-                            href="https://in.linkedin.com/in/vara-prasad-jada-046477163"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            LinkedIn
-                        </a>
-
-                        <a
-                            class="button"
-                            href="https://github.com/Varaprasad-Jada"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            GitHub
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer>
-
-        <div class="container">
-
-            <div class="footer-content">
-
-                <div>
-                    © 2026 Vara Prasad Jada
-                </div>
-
-                <div>
-                    Independent Developer & Digital Creator
-                </div>
-
-            </div>
-
-        </div>
-
-    </footer>
+<footer>
+  <div class="wrap">© 2026 Vara Prasad Jada</div>
+</footer>
 
 </body>
 </html>
